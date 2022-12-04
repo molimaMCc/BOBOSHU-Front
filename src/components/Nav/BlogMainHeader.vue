@@ -32,17 +32,23 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="nav-item"><a href="">工作台</a></li>
-                            <li class="nav-item"><a href="">加入我们</a></li>
+                            <li class="nav-item">
+                                <router-link to="/WorkeTable"
+                                    >WorkeTable</router-link
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <router-link to="/join">join us</router-link>
+                            </li>
                         </ul>
                     </nav>
                     <div class="nav-right">
                         <div class="slide"><span>幻灯片</span></div>
                         <router-link class="user login" to="/Login"
-                            >Login</router-link
+                            >Sign in</router-link
                         >
                         <router-link class="user register" to="/Register"
-                            >LoginUp</router-link
+                            >Sign up</router-link
                         >
                         <div class="social">
                             <a href="" class="iconfont icon-github"></a>

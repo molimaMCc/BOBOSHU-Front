@@ -2,7 +2,7 @@ import login from './request'
 
 const loginApi = (data) => {
     return login.post({
-        url: '/user',
+        url: '/user/login',
         data: data,
     })
 }

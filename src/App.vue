@@ -1,4 +1,6 @@
 <template>
     <router-view></router-view>
 </template>
-<script setup></script>
+<script setup>
+import MyMessage from '@/components/MyMessage/MyMessage.vue'
+</script>

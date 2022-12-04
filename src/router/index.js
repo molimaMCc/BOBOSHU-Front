@@ -1,7 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Layout from '@/view/Layout/index.vue'
-import BlogRegister from '@/view/Login/BlogRegister.vue'
-import BlogBlogin from '@/view/Login/BlogBlogin.vue'
+import Layout from '@/views/Layout/index.vue'
 
 const routes = [
     {
@@ -11,12 +9,22 @@ const routes = [
     {
         path: '/Login',
         name: 'BlogLogin',
-        component: BlogBlogin,
+        component: () => import('@/views/Login/BlogBlogin.vue'),
     },
     {
         path: '/Register',
         name: 'BlogRegister',
-        component: BlogRegister,
+        component: () => import('@/views/Login/BlogRegister.vue'),
+    },
+    {
+        path: '/WorkeTable',
+        name: 'WorkeTable',
+        component: () => import('@/views/WorkeTable/index.vue'),
+    },
+    {
+        path: '/join',
+        name: 'join',
+        component: () => import('@/views/Join/index.vue'),
     },
 ]
 const router = createRouter({
